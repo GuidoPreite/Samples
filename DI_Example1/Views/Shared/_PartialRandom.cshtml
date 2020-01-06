@@ -1,0 +1,8 @@
+﻿@inject DI_Example1.Interfaces.ITransientRandomNumberService TransientService
+@inject DI_Example1.Interfaces.IScopedRandomNumberService ScopedService
+@inject DI_Example1.Interfaces.ISingletonRandomNumberService SingletonService
+<hr />
+<h3>Partial View</h3>
+Transient Random Number: <b>@TransientService.GetNumber()</b><br />
+Scoped Random Number: <b>@ScopedService.GetNumber()</b><br />
+Singleton Random Number: <b>@SingletonService.GetNumber()</b><br />
